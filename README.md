@@ -20,16 +20,6 @@ Docker Compose, GitHub Actions. 34 tests, run in CI against real Postgres and Re
 
 ![results](results/summary.png)
 
-## Resume bullet
-
-> Built a content moderation pipeline for a generative-media API (FastAPI, PyTorch, OpenCV, Postgres,
-> Redis/RQ, Next.js): a deobfuscating PyTorch prompt classifier, NSFW, protected-face and logo detectors, a
-> scene-aware video frame sampler, a Postgres review queue with lease-based claiming, tenant API keys with
-> Redis token-bucket rate limits, and a gated retraining loop fed by reviewer decisions. On held-out
-> hand-written prompts it raised recall from 57% to 80% over a keyword blocklist while halving false positives
-> (94% vs 27% on obfuscated prompts) at 3.9 ms p50. Its video sampler caught 93% of quarter-second inserts from
-> 4.9 frames per clip (11× cheaper than checking every frame).
-
 ## Results
 
 All numbers come from `results/*.json`, which the scripts in `bench/` regenerate.
